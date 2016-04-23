@@ -11,7 +11,6 @@ $(document).ready(function() {
 
 
 // MIDWAY POINT
-// google.maps.geometry.spherical.interpolate(xPlace, yPlace, 0.5);
   function createMarker(latlng, label, html) {
     var contentString = '<b>' + label + '</b><br>' + html;
     var marker = new google.maps.Marker({
