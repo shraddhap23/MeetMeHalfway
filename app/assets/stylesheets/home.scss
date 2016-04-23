@@ -4,12 +4,154 @@
 
 html {
 	height: 100%;
+	font-family: gill sans;
+}
+
+body {
+	background-color: #373737;
+	color: #FF6600;
+}
+
+h1 {
+	font-size: 60px;
+	text-align: center;
+	font-family: gill sans;
+}
+
+.container {
+	text-align: center;
 }
 
 #map {
-	width: 500px;
-	height: 400px;
-	// background-color: #ccc;
+	width: 600px;
+	height: 500px;
+	margin-left: 425px;
 }
+
+input[type=text] {
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+button[type=button] {
+    width: 18%;
+    background-color: #FF6600;
+    color: #373737;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: 7px solid black;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button[type=button]:hover {
+	border: 7px solid red;
+	font-size: 20px;
+}
+
+p {
+	font-size: 20px;
+}
+
+#mode {
+  width: 10%;
+  background-color: #FF6600;
+  color: #373737;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: 5px solid black;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+//IPHONE 6
+@media (max-width: 480px) {
+  body {
+	  justify: center;
+	}
+
+	h1 {
+		font-size: 30px;
+		text-align: center;
+		font-family: gill sans;
+	}
+
+	#map {
+	  margin-left: 5px;
+	  width: 350px;
+	  height: 300px;
+	}
+	
+	input[type=text] {
+    width: 65%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 15px;
+    // text-align: center;
+	}
+
+	button[type=button] {
+	  width: 60%;
+	  background-color: #FF6600;
+	  color: #373737;
+	  padding: 10px 15px;
+	  margin: 5px 0;
+	  border: 6px solid black;
+	  border-radius: 4px;
+	  cursor: pointer;
+	  font-size: 15px;
+	}
+
+	button[type=button]:hover {
+		width: 65%;
+		border: 7px solid red;
+		font-size: 20px;
+	}
+
+	#mode {
+	  width: 45%;
+	  background-color: #FF6600;
+	  color: #373737;
+	  padding: 14px 20px;
+	  margin: 8px 0;
+	  border: 5px solid black;
+	  border-radius: 4px;
+	  cursor: pointer;
+	  font-size: 15px;
+	}
+}
+
+// @media (max-width: 330px) {
+// 	body {
+// 	  justify: center;
+// 	}
+
+// 	#map {
+// 	  margin-left: -1%;
+// 	  width: 300px;
+// 	  height: 200px;
+// 	}
+
+// 	#uber {
+// 	  margin-left: 0px; 
+// 	}
+
+// 	#lyft {
+// 	  margin-left: 0px;
+// 	}
+// }
+
 
 
