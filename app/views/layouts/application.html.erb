@@ -10,8 +10,8 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
     <script src="https://maps.googleapis.com/maps/api/js?key=<%= ENV['GOOGLE_MAP'] %>&v=3.exp&libraries=places,geometry"></script>
+    <script src="http://www.geocodezip.com/scripts/v3_epoly.js"></script>
   </head>
-
 
   <body>
     <%= yield %>
