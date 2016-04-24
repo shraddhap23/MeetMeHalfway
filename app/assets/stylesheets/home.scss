@@ -16,6 +16,9 @@ h1 {
 	font-size: 60px;
 	text-align: center;
 	font-family: gill sans;
+	// -webkit-text-fill-color: #FF6600; Will override color (regardless of order)
+ //  -webkit-text-stroke-width: 4px;
+ //  -webkit-text-stroke-color: black;
 }
 
 .container {
@@ -33,7 +36,7 @@ input[type=text] {
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
-    border: 1px solid #ccc;
+    border: 7px solid black;
     border-radius: 4px;
     box-sizing: border-box;
     font-size: 15px;
@@ -72,14 +75,78 @@ p {
   font-size: 15px;
 }
 
-//IPHONE 6
-@media (max-width: 480px) {
+// MEDIA QUERIES //
+
+//IPHONE 5
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) {
   body {
 	  justify: center;
 	}
 
 	h1 {
 		font-size: 30px;
+		text-align: center;
+		font-family: gill sans;
+	}
+
+	#map {
+	  margin-left: 2px;
+	  width: 300px;
+	  height: 300px;
+	}
+	
+	input[type=text] {
+    width: 65%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 15px;
+	}
+
+	button[type=button] {
+	  width: 60%;
+	  background-color: #FF6600;
+	  color: #373737;
+	  padding: 10px 15px;
+	  margin: 5px 0;
+	  border: 6px solid black;
+	  border-radius: 4px;
+	  cursor: pointer;
+	  font-size: 15px;
+	}
+
+	button[type=button]:hover {
+		width: 65%;
+		border: 5px solid red;
+		font-size: 15px;
+	}
+
+	#mode {
+	  width: 45%;
+	  background-color: #FF6600;
+	  color: #373737;
+	  padding: 14px 20px;
+	  margin: 8px 0;
+	  border: 5px solid black;
+	  border-radius: 4px;
+	  cursor: pointer;
+	  font-size: 15px;
+	}
+}
+
+
+
+//IPHONE 6
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) {
+  body {
+	  justify: center;
+	}
+
+	h1 {
+		font-size: 35px;
 		text-align: center;
 		font-family: gill sans;
 	}
@@ -99,7 +166,6 @@ p {
     border-radius: 4px;
     box-sizing: border-box;
     font-size: 15px;
-    // text-align: center;
 	}
 
 	button[type=button] {
@@ -116,7 +182,7 @@ p {
 
 	button[type=button]:hover {
 		width: 65%;
-		border: 7px solid red;
+		border: 5px solid red;
 		font-size: 20px;
 	}
 
@@ -133,25 +199,124 @@ p {
 	}
 }
 
-// @media (max-width: 330px) {
-// 	body {
-// 	  justify: center;
-// 	}
+// //IPHONE SIX PLUS
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) {
+  body {
+	  justify: center;
+	}
 
-// 	#map {
-// 	  margin-left: -1%;
-// 	  width: 300px;
-// 	  height: 200px;
-// 	}
+	h1 {
+		font-size: 40px;
+		text-align: center;
+		font-family: gill sans;
+	}
 
-// 	#uber {
-// 	  margin-left: 0px; 
-// 	}
+	#map {
+	  margin-left: 24px;
+	  width: 350px;
+	  height: 300px;
+	}
+	
+	input[type=text] {
+    width: 65%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 15px;
+	}
 
-// 	#lyft {
-// 	  margin-left: 0px;
-// 	}
-// }
+	button[type=button] {
+	  width: 60%;
+	  background-color: #FF6600;
+	  color: #373737;
+	  padding: 10px 15px;
+	  margin: 5px 0;
+	  border: 6px solid black;
+	  border-radius: 4px;
+	  cursor: pointer;
+	  font-size: 15px;
+	}
 
+	button[type=button]:hover {
+		width: 65%;
+		border: 5px solid red;
+		font-size: 20px;
+	}
+
+	#mode {
+	  width: 45%;
+	  background-color: #FF6600;
+	  color: #373737;
+	  padding: 14px 20px;
+	  margin: 8px 0;
+	  border: 5px solid black;
+	  border-radius: 4px;
+	  cursor: pointer;
+	  font-size: 15px;
+	}
+}
+
+// GALAXY S5
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) {
+  body {
+	  justify: center;
+	}
+
+	h1 {
+		font-size: 30px;
+		text-align: center;
+		font-family: gill sans;
+	}
+
+	#map {
+	  margin-left: 24px;
+	  width: 300px;
+	  height: 250px;
+	}
+	
+	input[type=text] {
+    width: 65%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 15px;
+	}
+
+	button[type=button] {
+	  width: 60%;
+	  background-color: #FF6600;
+	  color: #373737;
+	  padding: 10px 15px;
+	  margin: 5px 0;
+	  border: 6px solid black;
+	  border-radius: 4px;
+	  cursor: pointer;
+	  font-size: 15px;
+	}
+
+	button[type=button]:hover {
+		width: 65%;
+		border: 5px solid red;
+		font-size: 20px;
+	}
+
+	#mode {
+	  width: 45%;
+	  background-color: #FF6600;
+	  color: #373737;
+	  padding: 14px 20px;
+	  margin: 8px 0;
+	  border: 5px solid black;
+	  border-radius: 4px;
+	  cursor: pointer;
+	  font-size: 15px;
+	}
+}
 
 
