@@ -7,7 +7,15 @@ html {
 	font-family: futura;
 }
 
-#top, #bottom, #left, #right {
+body {
+  box-sizing: border-box;
+  min-height: 100vh;
+  margin: 0;
+  border-bottom: solid 15px black;
+  padding-top: 1px;
+}
+
+#top, #left, #right {
 	background: black;
 	position: fixed;
 }
@@ -24,17 +32,13 @@ html {
 	right: 0; 
 }
 		
-#top, #bottom {
+#top{
 	left: 0; right: 0;
 	height: 15px;
 }
 
 #top { 
 	top: 0; 
-}
-
-#bottom { 
-	bottom: 0; 
 }
 
 body {
@@ -98,6 +102,8 @@ h2 {
 
 p {
 	font-size: 20px;
+	padding-left: 22px;
+	margin-bottom: 5px;
 	// float: left;
 }
 
@@ -114,8 +120,6 @@ p {
 }
 
 .footer {
-	padding-left: 12px;
-	margin-bottom: 17px;
 	color: #848484;
 	text-align: left;
 }
@@ -196,11 +200,11 @@ p {
 	}
 
 	p {
-		font-size: 13px;
+		font-size: 12px;
 	}
 
 	.footer {
-		padding-left: 12px;
+		padding-left: 10px;
 		margin-bottom: 17px;
 	}
 
