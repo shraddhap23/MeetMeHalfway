@@ -4,7 +4,7 @@
 
 html {
 	height: 100%;
-	font-family: gill sans;
+	font-family: futura;
 }
 
 #top, #bottom, #left, #right {
@@ -38,17 +38,14 @@ html {
 }
 
 body {
-	background-color: #373737;
-	color: #FF6600;
+	background-color: #020731;
+	color: #848484;
 }
 
 h1 {
-	font-size: 60px;
+	font-size: 80px;
 	text-align: center;
-	font-family: gill sans;
-	// -webkit-text-fill-color: #FF6600; Will override color (regardless of order)
- //  -webkit-text-stroke-width: 4px;
- //  -webkit-text-stroke-color: black;
+	font-family: 'Pacifico', cursive;
 }
 
 .container {
@@ -58,7 +55,7 @@ h1 {
 #map {
 	width: 600px;
 	height: 500px;
-	margin-left: 425px;
+	margin-left: 485px;
 }
 
 input[type=text] {
@@ -66,22 +63,25 @@ input[type=text] {
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
-    border: 7px solid black;
+    border: 4px solid #848484;
     border-radius: 4px;
     box-sizing: border-box;
     font-size: 15px;
+    color: #020731;
 }
 
 button[type=button] {
     width: 18%;
-    background-color: #FF6600;
-    color: #373737;
+    background-color: white;
+    color: #020731;
     padding: 14px 20px;
-    margin: 8px 0;
-    border: 7px solid black;
+    // margin: 8px 0;
+    border: 4px solid #848484;
     border-radius: 4px;
     cursor: pointer;
-    font-size: 15px;
+    font-size: 25px;
+    font-family: 'Pacifico', cursive;
+    margin-left: 650px;
 }
 
 button[type=button]:hover {
@@ -89,26 +89,37 @@ button[type=button]:hover {
 	font-size: 20px;
 }
 
+h2 {
+	font-size: 20px;
+	float: left;
+	margin-left: 630px;
+	font-family: futura;
+}
+
 p {
 	font-size: 20px;
+	// float: left;
 }
 
 #mode {
   width: 10%;
-  background-color: #FF6600;
   color: #373737;
-  padding: 14px 20px;
   margin: 8px 0;
-  border: 5px solid black;
+  border: 2px solid #848484;
   border-radius: 4px;
   cursor: pointer;
   font-size: 15px;
+	margin-top: 18px;
+	margin-right: 610px;
 }
 
 .footer {
 	padding-left: 12px;
 	margin-bottom: 17px;
+	color: #848484;
+	text-align: left;
 }
+
 
 // MEDIA QUERIES //
 
@@ -118,10 +129,18 @@ p {
 	  justify: center;
 	}
 
+	html {
+		width: 100%;
+		height: 100%;
+		font-family: futura;
+	}
+	
 	h1 {
+		width: 100%;
 		font-size: 30px;
+		// padding-left: 50px;
+		font-family: 'Pacifico', cursive;
 		text-align: center;
-		font-family: gill sans;
 	}
 
 	#map {
@@ -135,7 +154,7 @@ p {
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
-    border: 1px solid #ccc;
+    border: 1px solid #848484;
     border-radius: 4px;
     box-sizing: border-box;
     font-size: 15px;
@@ -143,11 +162,10 @@ p {
 
 	button[type=button] {
 	  width: 60%;
-	  background-color: #FF6600;
 	  color: #373737;
-	  padding: 10px 15px;
-	  margin: 5px 0;
-	  border: 6px solid black;
+		float: left;
+	  margin-left: 65px;
+	  border: 6px solid #848484;
 	  border-radius: 4px;
 	  cursor: pointer;
 	  font-size: 15px;
@@ -159,29 +177,34 @@ p {
 		font-size: 15px;
 	}
 
+	h2 {
+		font-size: 20px;
+		float: left;
+		margin-left: 10px;
+		font-family: futura;
+	}
+
 	#mode {
-	  width: 45%;
-	  background-color: #FF6600;
+	  width: 40%;
 	  color: #373737;
 	  padding: 14px 20px;
 	  margin: 8px 0;
-	  border: 5px solid black;
+	  border: 5px solid #848484;
 	  border-radius: 4px;
 	  cursor: pointer;
 	  font-size: 15px;
 	}
 
 	p {
-		font-size: 15px;
+		font-size: 13px;
 	}
 
-.footer {
-	padding-left: 12px;
-	margin-bottom: 17px;
-}
+	.footer {
+		padding-left: 12px;
+		margin-bottom: 17px;
+	}
 
 }
-
 
 
 //IPHONE 6
@@ -189,11 +212,16 @@ p {
   body {
 	  justify: center;
 	}
+	
+	html {
+		height: 100%;
+		font-family: futura;
+	}
 
 	h1 {
 		font-size: 35px;
 		text-align: center;
-		font-family: gill sans;
+		font-family: 'Pacifico', cursive;
 	}
 
 	#map {
@@ -215,14 +243,15 @@ p {
 
 	button[type=button] {
 	  width: 60%;
-	  background-color: #FF6600;
 	  color: #373737;
-	  padding: 10px 15px;
+	  // padding: 10px 15px;
 	  margin: 5px 0;
 	  border: 6px solid black;
 	  border-radius: 4px;
 	  cursor: pointer;
 	  font-size: 15px;
+	  float: left;
+	  margin-left: 75px;
 	}
 
 	button[type=button]:hover {
@@ -233,7 +262,6 @@ p {
 
 	#mode {
 	  width: 45%;
-	  background-color: #FF6600;
 	  color: #373737;
 	  padding: 14px 20px;
 	  margin: 8px 0;
@@ -243,8 +271,15 @@ p {
 	  font-size: 15px;
 	}
 
+	h2 {
+		font-size: 20px;
+		float: left;
+		margin-left: 10px;
+		font-family: futura;
+	}
+
 	p {
-		font-size: 17px;
+		font-size: 15px;
 	}
 }
 
@@ -254,10 +289,22 @@ p {
 	  justify: center;
 	}
 
+	html {
+		height: 100%;
+		font-family: futura;
+	}
+
 	h1 {
 		font-size: 40px;
 		text-align: center;
-		font-family: gill sans;
+		font-family: 'Pacifico', cursive;
+	}
+
+	h2 {
+		font-size: 20px;
+		float: left;
+		margin-left: 10px;
+		font-family: futura;
 	}
 
 	#map {
@@ -279,7 +326,6 @@ p {
 
 	button[type=button] {
 	  width: 60%;
-	  background-color: #FF6600;
 	  color: #373737;
 	  padding: 10px 15px;
 	  margin: 5px 0;
@@ -297,7 +343,6 @@ p {
 
 	#mode {
 	  width: 45%;
-	  background-color: #FF6600;
 	  color: #373737;
 	  padding: 14px 20px;
 	  margin: 8px 0;
@@ -305,6 +350,10 @@ p {
 	  border-radius: 4px;
 	  cursor: pointer;
 	  font-size: 15px;
+	}
+
+	p {
+		font-size: 17px;
 	}
 }
 
@@ -314,10 +363,22 @@ p {
 	  justify: center;
 	}
 
+	html {
+		height: 100%;
+		font-family: futura;
+	}
+
 	h1 {
 		font-size: 30px;
 		text-align: center;
-		font-family: gill sans;
+		font-family: 'Pacifico', cursive;
+	}
+
+	h2 {
+		font-size: 20px;
+		float: left;
+		margin-left: 10px;
+		font-family: futura;
 	}
 
 	#map {
@@ -339,10 +400,9 @@ p {
 
 	button[type=button] {
 	  width: 60%;
-	  background-color: #FF6600;
 	  color: #373737;
 	  padding: 10px 15px;
-	  margin: 5px 0;
+	  margin-left: 70px;
 	  border: 6px solid black;
 	  border-radius: 4px;
 	  cursor: pointer;
@@ -357,7 +417,6 @@ p {
 
 	#mode {
 	  width: 45%;
-	  background-color: #FF6600;
 	  color: #373737;
 	  padding: 14px 20px;
 	  margin: 8px 0;
@@ -368,7 +427,7 @@ p {
 	}
 
 	p {
-		font-size: 17px;
+		font-size: 14.5px;
 	}
 
 }
