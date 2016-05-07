@@ -165,46 +165,15 @@ $(document).ready(function() {
   //SHOWS MAP
   function initMap() {
 
- // var styles = [
- //    {
- //      stylers: [
- //        { hue: "#00ffe6" },
- //        { saturation: -20 }
- //      ]
- //    },{
- //      featureType: "road",
- //      elementType: "geometry",
- //      stylers: [
- //        { lightness: 100 },
- //        { visibility: "simplified" }
- //      ]
- //    },{
- //      featureType: "road",
- //      elementType: "labels",
- //      stylers: [
- //        { visibility: "off" }
- //      ]
- //    }
- //  ];
-
-  // var styledMap = new google.maps.StyledMapType(styles,
-  //   {name: "Styled Map"});
-
     var mySLatLng = new google.maps.LatLng(mlat.lat, mlat.lng);
-    // var mySLatLng = new google.maps.LatLng(40.72413068375255, -73.9732228774983);
     // var mySLatLng = new google.maps.LatLng(40.75, -73.98383);
     // console.log(mySLatLng)
     var myOptions = {
       zoom: 12,
       center: mySLatLng
-    //   mapTypeControlOptions: {
-    //   mapTypeId: [google.maps.mapTypeId.ROADMAP, 'map_style']
-    // }
     };
     
     map = new google.maps.Map(document.getElementById('map'), myOptions);
-      // map.mapTypes.set('map_style', styledMap);
-      // map.setMapTypeId('map_style');
     polyline = new google.maps.Polyline({
       path: []
     });
@@ -247,11 +216,6 @@ $(document).ready(function() {
   document.getElementById('mode').addEventListener('change', function() {
     calculateAndDisplayRoute(directionsService, directionsDisplay);
   });
-
-    // calculateAndDisplayRoute(directionsService, directionsDisplay);
-    // document.getElementById('mode').addEventListener('change', function() {
-    //   calculateAndDisplayRoute(directionsService, directionsDisplay);
-    // });
 
   //FUNCTIONS THAT ONLY HIT ON SUBMIT
   $('#submit_button').click(function(){
